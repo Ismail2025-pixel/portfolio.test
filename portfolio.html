@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed's Portfolio</title>
+  <!-- <meta name="Description" content="Mohamed is a Business Informatics graduate turning data into clear, useful business insights." > -->
+  <link rel="stylesheet" href="./portfolio.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="hero" id="home">
+      <img class="pro grad" src="./graduation.jpeg" alt="grad">
+      <h1 class="title-h">Mohamed's Portfolio</h1>
+      <nav class="navbar" aria-label="Main navigation">
+       <img class="navbar-brand" src="./Letter m.svg" alt="home">Mohamed's Portfolio>
+        <button class="navbar-toggler" type="button" aria-controls="navbar-links" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button type="button" class="btn btn-primary" id=""></button>
+    <div class="protfolio1">
+      <br >
+      <div class="container2">
+        <img class="gato" src="./gato programador.jpeg" alt="gato">
+        <h2 class="hello" id="hello">Hello, I'm Mohamed!</h2>
+        <p class="summary">
+          I am a Business Informatics graduate with a strong interest in data analysis, business intelligence,
+          and technology-driven decision-making. I have knowledge of SQL, Python, Excel, and Power BI, and I enjoy
+          turning
+          complex data into clear,
+          actionable insights that help businesses improve performance and make informed decisions. My background in
+          account management has also helped me develop communication,
+          problem-solving, and client relationship skills.
+        </p>
+        <br>
+      </div>
+
+      <div class="container3">
+        <h2 class="exp" id="experience">Experience</h2>
+        <p class="exp-info">One Eighty Business Solutions | Account Manager
+          <br>
+          November 2023 – November 2025 | New Cairo, Egypt
+          <br>
+          <br>
+          • Built and maintained strong client relationships to improve customer satisfaction and understand client
+          needs.
+          <br>
+          <br>
+          • Managed escalated client issues, identified appropriate solutions, and helped maintain positive business
+          relationships.
+          <br>
+          <br>
+          • Supported client retention by delivering responsive customer service and proactively addressing client
+          concerns.
+          <br>
+          <br>
+          • Collaborated with the sales team to identify opportunities for upselling, strengthen existing accounts, and
+          support business growth.
+          <br>
+          <br>
+          • Communicated with clients and internal teams to help ensure timely issue resolution and a positive client
+          experience.
+        </p>
+      </div>
+      <div class="contaner4">
+        <h2 class="Education" id="Education">Education</h2>
+        <p class="educ">Arab Academy for Science, Technology and Maritime Transport
+          <br>
+          Bachelor's Degree in Business Informatics
+          <br>
+          June 2026 | Egypt
+          <br>
+          <br>
+          Graduation Project: Ship2Day
+          <br>
+          Developed a commercial website concept featuring an administrative dashboard, shipping functionality, online
+          stores for local brands, and a camera-based product tracking system.
+          <br>
+          Project Grade: A
+          <br>
+          <br>
+          Sheraton Heliopolis
+          <br>
+          High School Diploma <br> June 2021 | Egypt <br> GPA: 3.8
+        </p>
+      </div>
+
+      <br>
+      <br>
+      <div class="projects" id="projects">
+        <div class="grid-container">
+          <div class="card">
+            <img src="./_.jpeg" alt="project 1">
+          </div>
+          <div class="card">
+            <img src="./checkout.jpeg" alt="project 2">
+          </div>
+          <div class="card">
+            <img src="./eLIAS.jpeg" alt="project 3">
+          </div>
+          <div class="card">
+            <img src="./Noot noot coder.jpeg" alt="project 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const navToggle = document.querySelector(".navbar-toggler");
+    const navLinks = document.querySelector(".navbar-links");
+
+    navToggle.addEventListener("click", () => {
+      const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!isExpanded));
+      navLinks.classList.toggle("is-open", !isExpanded);
+    });
+
+    navLinks.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLAnchorElement) {
+        navToggle.setAttribute("aria-expanded", "false");
+        navLinks.classList.remove("is-open");
+      }
+    });
+  </script>
+
+  <footer class="footer">
+    <small>
+      Copyright © 2026 mohamed ismail's portfolio.
+    </small>
+  </footer>
+
+</body>
+
+</html>

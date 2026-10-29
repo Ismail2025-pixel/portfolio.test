@@ -1,0 +1,176 @@
+body{
+    background-color: antiquewhite;
+}
+
+.container {
+    position: relative;
+    width: min(1200px, 100%);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(0 0 0 / 35%);
+    border-radius: 48%;
+}
+
+.navbar a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    height: 30px;
+    width: 50px;
+    border-color: bisque;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.title-h {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    color: rgb(238, 172, 152);
+    text-align: center;
+    text-shadow: 0 2px 6px black;
+}
+
+.pro {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.container2 {
+    position: relative;
+}
+
+
+   .gato {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.hello {
+    text-align: center;
+    color: rgb(238, 172, 152);
+}
+
+.summary {
+    color: rgb(94, 83, 65);
+    width: 50%;
+    margin: auto;
+}
+
+.exp{
+    text-align: center;
+    color:rgb(238, 172, 152);
+}
+
+.exp-info{
+    color: rgb(94, 83, 65);
+    width: 50%;
+    margin: auto;
+}
+
+.Education{
+    text-align: center;
+    color:rgb(238, 172, 152);
+}
+
+.educ{
+    color: rgb(94, 83, 65);
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid antiquewhite;
+        border-radius: 4px;
+        background: transparent;
+        color: antiquewhite;
+        font: inherit;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-basis: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.75rem;
+        background-color: rgb(0 0 0 / 75%);
+    }
+
+    .navbar-links.is-open {
+        display: flex;
+    }
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.grid-container img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projects{
+    align-self: stretch;
+}
+
+footer{
+    text-align: center;
+}
