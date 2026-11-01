@@ -1,10 +1,12 @@
 body{
     background-color: antiquewhite;
+    margin: 0;
 }
 
 .container {
     position: relative;
     width: min(1200px, 100%);
+    margin-inline: auto ;
 }
 
 .navbar {
@@ -55,6 +57,10 @@ body{
 
 .hero {
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
 }
 
 .title-h {
@@ -72,8 +78,8 @@ body{
 .pro {
     display: block;
     width: 100%;
-    height: auto;
-    border-radius: 5%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container2 {
@@ -171,6 +177,82 @@ body{
     align-self: stretch;
 }
 
-footer{
+.skills{
+    text-align: center;
+    color:rgb(238, 172, 152);
+}
+
+.skil-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    color: rgb(94, 83, 65);
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.skil-info li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.skil-info li:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.65rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: rgb(94, 83, 65);
+    color: antiquewhite;
+}
+
+.footer-link {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: rgb(238, 172, 152);
+    text-decoration: underline;
+}
+
+.copyright {
+    flex-basis: 100%;
+    margin: 0;
     text-align: center;
 }
+
+/* .float1{
+    float: left;
+    height: 50vh;
+    width: auto;
+    justify-content: space-around;
+    margin-top: 60px;
+} */
+
+/* .footer{
+    background-color: rgb(209, 119, 0);
+    
+}
+
+.mail{
+    text-align: left;
+}
+
+.bottom{
+   
+    text-align: center;
+    
+} */
